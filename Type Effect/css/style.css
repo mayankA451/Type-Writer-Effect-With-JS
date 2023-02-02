@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background: cover;
+}
+
+#p {
+    color: #fff;
+    font-size: 30px;
+    background: #000;
+    padding: 40px;
+    line-height: 1.5em;
+    width: 600px;
+    font-family: sans-serif;
+    opacity: .7;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    /*text-align: center;*/
+}
+
+.adv {
+    position: absolute;
+    bottom: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.adv img {
+    width: 130px;
+}
+
+.adv:hover {
+    opacity: .7;
+}

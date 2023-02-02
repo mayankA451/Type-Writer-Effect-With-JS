@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Js Type writer Effect</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <p id="p"></p>
+
+    <script>
+        var speed = 70;
+        var i = 0;
+        var p = document.getElementById('p');
+        var txt = `Hope You will Love the Effect`;
+
+        function tWE() {
+            if (i < txt.length) {
+                p.innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(tWE, speed);
+            } else {
+                i = 0;
+                p.innerHTML = txt.charAt(i);
+                i++;
+                setTimeout(tWE, speed);
+            }
+        }
+        tWE();
+    </script>
+
+</body>
+
+</html>
